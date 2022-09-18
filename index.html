@@ -6,13 +6,7 @@
 </body>
 </html>
 <script>
-var x = localStorage.getItem("varKey")
-if(!x){
-	x = 0;
-}
+const fs = require('fs')
 function myFunction(){
-  alert(x)
-  x++;
-  localStorage.setItem("varKey",x)
 }
 </script>
