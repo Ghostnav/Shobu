@@ -6,8 +6,13 @@
 </body>
 </html>
 <script>
-var x = 0;
+var x = localStorage.getItem("varKey")
+if(!x){
+	x = 0;
+}
 function myFunction(){
   alert(x)
+  x++;
+  localStorage.setItem("varKey",x)
 }
 </script>
